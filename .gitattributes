@@ -1,0 +1,54 @@
+# Handle line endings automatically for files detected as text and leave all files detected as binary untouched.
+* text=auto
+
+#
+# The above will handle all files NOT found below
+#
+
+# These files are text and should be normalized (Convert crlf => lf)
+*.css           text
+*.df            text
+*.gradle        text
+*.groovy        text
+*.htm           text diff=html
+*.html          text diff=html
+*.java          text diff=java
+*.js            text
+*.json          text
+*.jsp           text
+*.jspf          text
+*.md            text
+*.properties    text
+*.py            text
+*.svg           text
+*.template      text
+*.tld           text
+*.txt           text
+*.xml           text
+*.xsd           text
+
+# These files are text with fixed line ending type
+*.bat           text eol=crlf
+*.sh            text eol=lf
+
+# These files are binary and should be left untouched
+# (binary is a macro for -text -diff)
+*.class         binary
+*.doc           binary
+*.docx          binary
+*.ear           binary
+*.gif           binary
+*.ico           binary
+*.jar           binary
+*.jpeg          binary
+*.jpg           binary
+*.png           binary
+*.pyc           binary
+*.vista         binary
+*.war           binary
+*.xls           binary
+*.xlsx          binary
+
+# File specific patterns
+gradlew                     text eol=lf
+gradle-wrapper.properties   text eol=lf

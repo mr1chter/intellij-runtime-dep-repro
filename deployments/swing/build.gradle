@@ -1,0 +1,11 @@
+apply plugin: 'application'
+apply plugin: 'java'
+
+dependencies {
+    runtimeOnly project(':modules:javase')
+    runtimeOnly project(':modules:businesslogic')
+}
+
+mainClassName = 'com.forflow.devprodeng.test.Main'
+
+

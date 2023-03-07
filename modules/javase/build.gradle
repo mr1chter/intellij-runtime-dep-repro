@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+dependencies {
+    compile project(':modules:base')
+    compile 'jakarta.enterprise:jakarta.enterprise.cdi-api:2.0.2'
+    compile project.dependencies.create("org.jboss.weld.se:weld-se-core:3.1.9.Final", {
+        exclude module: 'groovy-all'
+    })
+    runtime 'org.jboss:jandex:2.0.5.Final'
+
+}
+
+

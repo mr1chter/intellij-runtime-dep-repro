@@ -1,0 +1,10 @@
+group 'com.forflow.devprodeng.test'
+version '1.0-SNAPSHOT'
+description "Big Project"
+
+
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}

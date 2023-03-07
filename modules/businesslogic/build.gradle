@@ -1,0 +1,7 @@
+apply plugin: 'java'
+
+dependencies {
+    compile project(':modules:base')
+    compile 'jakarta.enterprise:jakarta.enterprise.cdi-api:2.0.2'
+
+}

@@ -1,0 +1,6 @@
+rootProject.name = 'gradle-cdi-stuff-test'
+
+include 'modules:base'
+include 'modules:businesslogic'
+include 'modules:javase'
+include 'deployments:swing'
